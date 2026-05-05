@@ -1,1 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+
+main {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+    
+    grid-template-areas:
+    "top-header"
+    "light-section"
+    ;
+}
+
+header {
+  grid-area: top-header;
+  
+}
+
+section {
+  grid-area: light-section;
+  background-color: #ebc907;
+  width: 400px;
+  height: 600px;
+}
+.light{
+    padding: 10px;
+}
+
+#red-light{
+    background-color: red;
+}
+
+#yellow-light{
+    background-color: yellow;
+    
+}
+
+#green-light{
+    background-color: green;
+}
