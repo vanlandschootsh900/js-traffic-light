@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+.housing{display: grid;}
+
+
+
+
+
+
+
+
 
 main {
     display: grid;
@@ -18,28 +27,40 @@ main {
 
 header {
   grid-area: top-header;
-  
+  grid-template-rows: repeat(3,80px);
+  gap: 15px;
+  background-color: #ebc907;
+  padding: 20px;
+  border-radius: 40px;
+}
+
+.light {
+  width: 80px;
+  height: 80px;
+  background-color: gray;
+  border-radius: 50%;
+  transition: 0.3s;
 }
 
 section {
   grid-area: light-section;
-  background-color: #ebc907;
+  /* background-color: #ebc907; */
   width: 400px;
   height: 600px;
 }
-.light{
-    padding: 10px;
+
+#red-light.on {
+  background-color: red;
+  box-shadow: 0 0 20px #f00;
 }
 
-#red-light{
-    background-color: red;
+#yellow-light.on {
+  background-color: yellow;
+  box-shadow: 0 0 20px #fc0;
+
 }
 
-#yellow-light{
-    background-color: yellow;
-    
-}
-
-#green-light{
-    background-color: green;
+#green-light.on {
+  background-color: green;
+  box-shadow: 0 0 20px #0f0;
 }
